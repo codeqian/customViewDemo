@@ -1,4 +1,4 @@
 # customViewDemo
-===
-#####flippedButton
+==
+* flippedButton
 翻转按钮
