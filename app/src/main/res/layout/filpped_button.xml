@@ -6,15 +6,17 @@
     android:orientation="vertical">
     <FrameLayout
         android:id="@+id/mButton"
+        android:layout_margin="100dp"
         android:background="@color/colorPrimary"
         android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/buttonText"
-            android:text="FLIPPED BUTTON"
+            android:text="FRONT BUTTON"
+            android:gravity="center"
             android:textColor="@android:color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
     </FrameLayout>
 </LinearLayout>

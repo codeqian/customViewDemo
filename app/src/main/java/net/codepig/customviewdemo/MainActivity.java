@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        fButton=(flippedButton) findViewById(R.id.flippedButton);
+        fButton=findViewById(R.id.flippedButton);
         fButton.setOnMyClickListener(new flippedButton.IMyClick(){
             @Override
             public void onMyClick(String str) {
