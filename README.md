@@ -8,4 +8,4 @@
 (https://github.com/codeqian/customViewDemo/blob/master/screenShoot/mask.png)
 * SensorDepth3D<br>
 传感器3d景深效果
-(https://github.com/codeqian/customViewDemo/raw/master/screenShoot/3d.gif)
+![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/3d.gif)
