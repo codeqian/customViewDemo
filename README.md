@@ -9,3 +9,5 @@
 * SensorDepth3D<br>
 传感器3d景深效果<br>
 ![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/3d.gif)
+* AutoScaleTextView<br>
+自适配不同机型TextView
