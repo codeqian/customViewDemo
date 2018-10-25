@@ -1,42 +1,53 @@
 package net.codepig.customviewdemo;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-
-import net.codepig.customviewdemo.view.SensorDepth3D;
-import net.codepig.customviewdemo.view.flippedButton;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private SensorDepth3D sensorDepth3D;
-    private final String LOG_TAG="LOGCAT_customDEMO";
+    private Activity mainActivity;
+    private TextView flipBtn,maskBtn,DepthBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sensorDepth3D=findViewById(R.id.sensorDepth3d);
-//        fButton.setOnMyClickListener(new flippedButton.IMyClick(){
-//            @Override
-//            public void onMyClick(String str) {
-//                Log.d(LOG_TAG,str);
-//            }
-//        });
+        flipBtn=findViewById(R.id.flipBtn);
+        maskBtn=findViewById(R.id.maskBtn);
+        DepthBtn=findViewById(R.id.DepthBtn);
+        mainActivity=this;
+
+        flipBtn.setOnClickListener(clickBtn);
+        maskBtn.setOnClickListener(clickBtn);
+        DepthBtn.setOnClickListener(clickBtn);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        if(sensorDepth3D!=null){
-            sensorDepth3D.unregisterListener();
+    private View.OnClickListener clickBtn = new View.OnClickListener(){
+        Intent intent;
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.flipBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, FlippedButtonPage.class);
+                    startActivity(intent);
+                    break;
+                case R.id.maskBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, MaskImagePage.class);
+                    startActivity(intent);
+                    break;
+                case R.id.DepthBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, SensorDepth3DPage.class);
+                    startActivity(intent);
+                    break;
+                default:
+                    break;
+            }
         }
-    }
-
-    @Override
-    protected void onResume(){
-        super.onResume();
-        if(sensorDepth3D!=null){
-            sensorDepth3D.registerListener();
-        }
-    }
+    };
 }
