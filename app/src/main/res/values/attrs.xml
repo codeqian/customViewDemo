@@ -4,4 +4,9 @@
         <attr name="image" format="integer" />
         <attr name="mask" format="integer" />
     </declare-styleable>
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="baseScreenHeight" format="integer"/>
+        <attr name="textSizePx" format="integer" />
+        <attr name="textBold" format="boolean" />
+    </declare-styleable>
 </resources>
