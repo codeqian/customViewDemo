@@ -13,3 +13,9 @@
 自适配不同机型TextView
 * CircleImageView.java和ClipCircleImageView.java<br>
 圆形图片View
+* flyHeart <br>
+飘动心形效果<br>
+![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/20190201_155134.gif)
+* SeekRangeBar <br>
+双向滑块进度条<br>
+![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/20190201_155107.gif)
