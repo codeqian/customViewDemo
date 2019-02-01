@@ -21,6 +21,8 @@
         <activity android:name=".FlippedButtonPage" />
         <activity android:name=".MaskImagePage" />
         <activity android:name=".SensorDepth3DPage"></activity>
+        <activity android:name=".SeekRangeBarPage"></activity>
+        <activity android:name=".FlyHeartPage"></activity>
     </application>
 
 </manifest>

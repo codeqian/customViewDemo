@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Activity mainActivity;
-    private TextView flipBtn,maskBtn,DepthBtn;
+    private TextView flipBtn,maskBtn,DepthBtn,flyHeartBtn,seekBarBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +18,16 @@ public class MainActivity extends AppCompatActivity {
         flipBtn=findViewById(R.id.flipBtn);
         maskBtn=findViewById(R.id.maskBtn);
         DepthBtn=findViewById(R.id.DepthBtn);
+        flyHeartBtn=findViewById(R.id.flyHeartBtn);
+        seekBarBtn=findViewById(R.id.seekBarBtn);
         mainActivity=this;
 
         flipBtn.setOnClickListener(clickBtn);
         maskBtn.setOnClickListener(clickBtn);
         DepthBtn.setOnClickListener(clickBtn);
+        flyHeartBtn.setOnClickListener(clickBtn);
+        DepthBtn.setOnClickListener(clickBtn);
+        seekBarBtn.setOnClickListener(clickBtn);
     }
 
     private View.OnClickListener clickBtn = new View.OnClickListener(){
@@ -43,6 +48,16 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.DepthBtn:
                     intent = new Intent();
                     intent.setClass(mainActivity, SensorDepth3DPage.class);
+                    startActivity(intent);
+                    break;
+                case R.id.seekBarBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, SeekRangeBarPage.class);
+                    startActivity(intent);
+                    break;
+                case R.id.flyHeartBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, FlyHeartPage.class);
                     startActivity(intent);
                     break;
                 default:

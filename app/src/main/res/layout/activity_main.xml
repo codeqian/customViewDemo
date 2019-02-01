@@ -35,6 +35,23 @@
                 android:text="SensorDepth3D"
                 android:textColor="@color/colorPrimary"
                 app:textSizePx="32"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <net.codepig.customviewdemo.view.AutoScaleTextView
+                android:text="flyHeartButton"
+                android:id="@+id/flyHeartBtn"
+                android:textColor="@color/colorPrimary"
+                app:textSizePx="32"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <net.codepig.customviewdemo.view.AutoScaleTextView
+                android:text="seekBarButton"
+                android:id="@+id/seekBarBtn"
+                android:textColor="@color/colorPrimary"
+                app:textSizePx="32"
+                android:layout_marginBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
