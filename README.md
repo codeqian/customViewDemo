@@ -11,3 +11,5 @@
 ![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/3d.gif)
 * AutoScaleTextView<br>
 自适配不同机型TextView
+* CircleImageView.java和ClipCircleImageView.java<br>
+圆形图片View
