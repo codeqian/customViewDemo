@@ -19,3 +19,5 @@
 * SeekRangeBar <br>
 双向滑块进度条<br>
 ![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/20190201_155107.gif)
+* HeightProvider.java<br>
+计算软键盘高度的PopupWindow<br>
