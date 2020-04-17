@@ -54,6 +54,14 @@
                 android:layout_marginBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <net.codepig.customviewdemo.view.AutoScaleTextView
+                android:text="inputEdit"
+                android:id="@+id/inputBtn"
+                android:textColor="@color/colorPrimary"
+                app:textSizePx="32"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     <!--</ScrollView>-->
 </LinearLayout>

@@ -20,9 +20,13 @@
         </activity>
         <activity android:name=".FlippedButtonPage" />
         <activity android:name=".MaskImagePage" />
-        <activity android:name=".SensorDepth3DPage"></activity>
-        <activity android:name=".SeekRangeBarPage"></activity>
-        <activity android:name=".FlyHeartPage"></activity>
+        <activity android:name=".SensorDepth3DPage"/>
+        <activity android:name=".SeekRangeBarPage"/>
+        <activity android:name=".FlyHeartPage"/>
+        <activity
+            android:name=".InputPage"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
     </application>
 
 </manifest>

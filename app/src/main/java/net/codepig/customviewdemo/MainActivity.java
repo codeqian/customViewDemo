@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private Activity mainActivity;
-    private TextView flipBtn,maskBtn,DepthBtn,flyHeartBtn,seekBarBtn;
+    private TextView flipBtn,maskBtn,DepthBtn,flyHeartBtn,seekBarBtn,inputBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         DepthBtn=findViewById(R.id.DepthBtn);
         flyHeartBtn=findViewById(R.id.flyHeartBtn);
         seekBarBtn=findViewById(R.id.seekBarBtn);
+        inputBtn=findViewById(R.id.inputBtn);
         mainActivity=this;
 
         flipBtn.setOnClickListener(clickBtn);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         flyHeartBtn.setOnClickListener(clickBtn);
         DepthBtn.setOnClickListener(clickBtn);
         seekBarBtn.setOnClickListener(clickBtn);
+        inputBtn.setOnClickListener(clickBtn);
     }
 
     private View.OnClickListener clickBtn = new View.OnClickListener(){
@@ -58,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.flyHeartBtn:
                     intent = new Intent();
                     intent.setClass(mainActivity, FlyHeartPage.class);
+                    startActivity(intent);
+                    break;
+                case R.id.inputBtn:
+                    intent = new Intent();
+                    intent.setClass(mainActivity, InputPage.class);
                     startActivity(intent);
                     break;
                 default:
