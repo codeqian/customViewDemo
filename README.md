@@ -10,9 +10,9 @@
 传感器3d景深效果<br>
 ![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/3d.gif)
 * AutoScaleTextView<br>
-自适配不同机型TextView
+自适配不同机型TextView<br>
 * CircleImageView.java和ClipCircleImageView.java<br>
-圆形图片View
+圆形图片View<br>
 * flyHeart <br>
 飘动心形效果<br>
 ![](https://github.com/codeqian/customViewDemo/raw/master/screenShoot/20190201_155134.gif)
